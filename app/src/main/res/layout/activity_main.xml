@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1DDCF4"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/sender1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_edittext"
+        android:ems="10"
+        android:hint="Sender 1"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sender2"
+        app:layout_constraintVertical_bias="0.396" />
+
+    <EditText
+        android:id="@+id/sender2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/round_edittext2"
+        android:ems="10"
+        android:hint="Sender 2"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/send1"
+        android:layout_width="38dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_send_24"
+        app:layout_constraintBottom_toBottomOf="@+id/sender1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sender1"
+        app:layout_constraintTop_toTopOf="@+id/sender1" />
+
+    <ImageView
+        android:id="@+id/send2"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_send_24"
+        app:layout_constraintBottom_toBottomOf="@+id/sender2"
+        app:layout_constraintEnd_toStartOf="@+id/sender2"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sender2"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="558dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
